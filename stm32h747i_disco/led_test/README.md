@@ -11,15 +11,20 @@
 | PIN | GPIO의 특정 핀을 의미. GPIO_PIN_13은 코드 상에서 13번째 핀을 의미. |  |
 | Port | PIN와 동일시 여겨짐 |  |
 | PI13 | GPIO I channel의 13번째 핀의 실제 명칭. |  |
+| RCC | MCU의 모든 클럭을 관장하는 컨트롤러 | Reset Clock Controller |
 
 <br>
+
+# 사용된 기능
+* RCC
+* GPIO (PI12 ~ 15)
 
 # 프로젝트 불러오기
 * "STMCubeIDE 실행 -> File -> Open Projects From File System... -> Directory..."를 눌러 led_test 폴더 선택.
 
 <br>
 
-# 실행 방법
+# 실행 방법 (CM4 먼저 업로드, CM7를 나중에)
 1. Run -> Run Configurations... -> STM32 C/C++ Application -> led_test_CM4 Debug -> Main 탭 누르기 -> 중앙 Build Cnofiguration을 Debug로 수정 -> Debugger 탭 누르기 -> Interface에 ST-LINK S/N check -> Scan 버튼 누르고 잠시 기다리기 (어떤 코드가 나올 때까지).
 2. Apply
 3. Run
